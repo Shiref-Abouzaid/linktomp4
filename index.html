@@ -497,10 +497,10 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="/" rel="noopener">Home</a></li>
+                        <li><a href="/instagram.html" rel="noopener">Instagram Downloader</a></li>
+                        <li><a href="/facebook.html" rel="noopener">Facebook Downloader</a></li>
                         <li><a href="#" rel="noopener">TikTok Downloader</a></li>
-                        <li><a href="#" rel="noopener">Instagram Downloader</a></li>
                         <li><a href="#" rel="noopener">Twitter Downloader</a></li>
-                        <li><a href="#" rel="noopener">Facebook Downloader</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-section" aria-label="Company information">
@@ -542,7 +542,6 @@
             try {
                 const text = await navigator.clipboard.readText();
                 urlInput.value = text;
-                urlInput.focus();
                 toggleClearButton();
             } catch (error) {
                 console.error('Failed to read clipboard:', error);

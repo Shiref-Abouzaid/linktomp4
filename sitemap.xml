@@ -18,15 +18,31 @@
         </image:image>
     </url>
     
-    <!-- Add more pages here as you create them -->
-    <!-- Example:
+    <!-- Instagram Downloader -->
     <url>
-        <loc>https://linktomp4.com/tiktok-downloader</loc>
-        <lastmod>2024-11-24</lastmod>
+        <loc>https://linktomp4.com/instagram.html</loc>
+        <lastmod>2025-11-24</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://linktomp4.com/images/thumbnail.jpg</image:loc>
+            <image:title>Instagram Reels Downloader</image:title>
+            <image:caption>Download Instagram Reels and videos instantly for free</image:caption>
+        </image:image>
     </url>
-    -->
+    
+    <!-- Facebook Downloader -->
+    <url>
+        <loc>https://linktomp4.com/facebook.html</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://linktomp4.com/images/thumbnail.jpg</image:loc>
+            <image:title>Facebook Reels Downloader</image:title>
+            <image:caption>Download Facebook Reels and videos instantly for free</image:caption>
+        </image:image>
+    </url>
     
 </urlset>
 
