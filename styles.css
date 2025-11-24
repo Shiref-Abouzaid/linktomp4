@@ -651,6 +651,31 @@ body {
         height: 32px;
     }
 
+    .feature-card {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .step {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+    }
+
+    .faq-item:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
     .steps {
         flex-direction: column;
     }

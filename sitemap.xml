@@ -44,5 +44,18 @@
         </image:image>
     </url>
     
+    <!-- TikTok Downloader -->
+    <url>
+        <loc>https://linktomp4.com/tiktok.html</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://linktomp4.com/images/thumbnail.jpg</image:loc>
+            <image:title>TikTok Video Downloader - No Watermark</image:title>
+            <image:caption>Download TikTok videos without watermark instantly. Free TikTok downloader with HD quality and no watermark.</image:caption>
+        </image:image>
+    </url>
+    
 </urlset>
 
