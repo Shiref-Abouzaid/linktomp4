@@ -216,8 +216,11 @@
     <!-- Preload & DNS Prefetch -->
     <link rel="dns-prefetch" href="https://video-downloader.shiref-abouzaid.workers.dev">
     <link rel="preconnect" href="https://video-downloader.shiref-abouzaid.workers.dev" crossorigin>
+    <link rel="preload" href="styles.css" as="style">
 
     <link rel="stylesheet" href="styles.css">
+
+
 </head>
 <body>
 
@@ -238,10 +241,35 @@
 
     <!-- Top Ad Space -->
     <div class="ad-container ad-top" role="complementary" aria-label="Advertisement">
-        <div class="ad-label">Advertisement</div>
-        <div class="ad-space ad-horizontal">
-            <!-- 728x90 Leaderboard Ad -->
-        </div>
+        <!-- <div class="ad-label">Advertisement</div> -->
+        <div id="adsterra-banner"></div>
+
+    
+        <!-- السكريبت بتاع التحميل الديناميكي -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // إنشاء السكريبت الأول (الإعدادات)
+                var configScript = document.createElement('script');
+                configScript.type = 'text/javascript';
+                configScript.innerHTML = `
+                    atOptions = {
+                        'key' : 'ed7094f61675be2ef3c3edbad1d8afe9',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                    };
+                `;
+                document.getElementById('adsterra-banner').appendChild(configScript);
+                
+                // إنشاء السكريبت التاني (الـ invoke)
+                var invokeScript = document.createElement('script');
+                invokeScript.type = 'text/javascript';
+                invokeScript.src = '//www.highperformanceformat.com/ed7094f61675be2ef3c3edbad1d8afe9/invoke.js';
+                document.getElementById('adsterra-banner').appendChild(invokeScript);
+            });
+        </script>
+
     </div>
 
 
@@ -300,6 +328,7 @@
                     <!-- Results Container -->
                     <div id="resultsContainer" style="display: none;"></div>
 
+                    
                     <!-- Report Problem -->
                     <div class="report-problem-container">
                         <a href="#" class="report-problem-btn">
@@ -312,6 +341,33 @@
                         </a>
                     </div>
 
+
+                    <!-- Middle Ad Space -->
+                    <div class="ad-container ad-middle" role="complementary" aria-label="Advertisement">
+                        <!-- <div class="ad-label">Advertisement</div>
+                        <div class="ad-space ad-horizontal">
+
+                        </div> -->
+                        <div id="ad-placement"></div>
+                    
+                        <!-- السكريبت -->
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // إنشاء الـ div
+                                var containerDiv = document.createElement('div');
+                                containerDiv.id = 'container-f9ae061ae442ad60847ceea9b7570912';
+                                document.getElementById('ad-placement').appendChild(containerDiv);
+                                
+                                // إنشاء السكريبت
+                                var adScript = document.createElement('script');
+                                adScript.async = true;
+                                adScript.setAttribute('data-cfasync', 'false');
+                                adScript.src = '//pl28129437.effectivegatecpm.com/f9ae061ae442ad60847ceea9b7570912/invoke.js';
+                                document.getElementById('ad-placement').appendChild(adScript);
+                            });
+                        </script>
+                    </div>
+  
                     <!-- Supported Platforms -->
                     <div class="platforms">
                         <span class="platforms-label">✨ We Support Downloads From:</span>
@@ -397,13 +453,7 @@
                 </div>
             </section>
 
-            <!-- Middle Ad Space -->
-            <div class="ad-container ad-middle" role="complementary" aria-label="Advertisement">
-                <div class="ad-label">Advertisement</div>
-                <div class="ad-space ad-horizontal">
-                    <!-- 728x90 Leaderboard Ad -->
-                </div>
-            </div>
+       
 
             <!-- How It Works Section -->
             <section class="how-it-works">
