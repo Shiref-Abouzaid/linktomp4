@@ -29,6 +29,9 @@ body {
     overflow-x: hidden;
 }
 
+.ad-banner.ad-top {
+    height: 90px;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -578,6 +581,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .ad-banner.ad-top {
+        height: 50px;
+    }
     .header {
         padding: 20px 0;
     }
