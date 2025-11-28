@@ -257,62 +257,10 @@
     
     <!-- Top Ad Space -->
     <div class="ad-container ad-banner ad-top" role="complementary" aria-label="Advertisement">
-        <!-- <div class="ad-label">Advertisement</div>
+        <div class="ad-label">Advertisement</div>
         <div class="ad-space ad-horizontal">
-            728x90 Leaderboard Ad
-        </div> -->
-        <div id="adsterra-banner" style="text-align: center; margin: 20px 0;"></div>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var banner = document.getElementById('adsterra-banner');
-                
-                // التحقق من نوع الجهاز
-                var isMobile = window.innerWidth <= 768;
-                
-                // إنشاء السكريبت الأول (الإعدادات)
-                var configScript = document.createElement('script');
-                configScript.type = 'text/javascript';
-                
-                if (isMobile) {
-                    // إعلان الموبايل
-                    configScript.innerHTML = `
-                        atOptions = {
-                            'key' : '5cd9e7316203b2efabc2739a932c6b4c',
-                            'format' : 'iframe',
-                            'height' : 50,
-                            'width' : 320,
-                            'params' : {}
-                        };
-                    `;
-                } else {
-                    // إعلان الديسكتوب
-                    configScript.innerHTML = `
-                        atOptions = {
-                            'key' : 'ed7094f61675be2ef3c3edbad1d8afe9',
-                            'format' : 'iframe',
-                            'height' : 90,
-                            'width' : 728,
-                            'params' : {}
-                        };
-                    `;
-                }
-                
-                banner.appendChild(configScript);
-                
-                // إنشاء السكريبت التاني (الـ invoke)
-                var invokeScript = document.createElement('script');
-                invokeScript.type = 'text/javascript';
-                
-                if (isMobile) {
-                    invokeScript.src = '//www.highperformanceformat.com/5cd9e7316203b2efabc2739a932c6b4c/invoke.js';
-                } else {
-                    invokeScript.src = '//www.highperformanceformat.com/ed7094f61675be2ef3c3edbad1d8afe9/invoke.js';
-                }
-                
-                banner.appendChild(invokeScript);
-            });
-        </script>
+            <!-- 728x90 Leaderboard Ad -->
+        </div>
     </div>
 
 
@@ -389,28 +337,10 @@
                 
                 <!-- Middle Ad Space -->
                 <div class="ad-container ad-middle" role="complementary" aria-label="Advertisement">
-                    <!-- <div class="ad-label">Advertisement</div>
+                    <div class="ad-label">Advertisement</div>
                     <div class="ad-space ad-horizontal">
-                        728x90 Leaderboard Ad
-                    </div> -->
-                    <div id="ad-placement"></div>
-    
-                    <!-- السكريبت -->
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            // إنشاء الـ div
-                            var containerDiv = document.createElement('div');
-                            containerDiv.id = 'container-f9ae061ae442ad60847ceea9b7570912';
-                            document.getElementById('ad-placement').appendChild(containerDiv);
-                            
-                            // إنشاء السكريبت
-                            var adScript = document.createElement('script');
-                            adScript.async = true;
-                            adScript.setAttribute('data-cfasync', 'false');
-                            adScript.src = '//pl28129437.effectivegatecpm.com/f9ae061ae442ad60847ceea9b7570912/invoke.js';
-                            document.getElementById('ad-placement').appendChild(adScript);
-                        });
-                    </script>
+                        <!-- 728x90 Leaderboard Ad -->
+                    </div>
                 </div>
     
   
