@@ -78,10 +78,11 @@
     <meta name="apple-touch-fullscreen" content="yes">
     
     <!-- Favicon & App Icons -->
-    <link rel="icon" type="image/svg+xml" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Schema.org Structured Data - WebApplication -->
     <script type="application/ld+json">
@@ -263,56 +264,7 @@
         </div> -->
         <div id="adsterra-banner" style="text-align: center; margin: 20px 0;"></div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var banner = document.getElementById('adsterra-banner');
-                
-                // التحقق من نوع الجهاز
-                var isMobile = window.innerWidth <= 768;
-                
-                // إنشاء السكريبت الأول (الإعدادات)
-                var configScript = document.createElement('script');
-                configScript.type = 'text/javascript';
-                
-                if (isMobile) {
-                    // إعلان الموبايل
-                    configScript.innerHTML = `
-                        atOptions = {
-                            'key' : '5cd9e7316203b2efabc2739a932c6b4c',
-                            'format' : 'iframe',
-                            'height' : 50,
-                            'width' : 320,
-                            'params' : {}
-                        };
-                    `;
-                } else {
-                    // إعلان الديسكتوب
-                    configScript.innerHTML = `
-                        atOptions = {
-                            'key' : 'ed7094f61675be2ef3c3edbad1d8afe9',
-                            'format' : 'iframe',
-                            'height' : 90,
-                            'width' : 728,
-                            'params' : {}
-                        };
-                    `;
-                }
-                
-                banner.appendChild(configScript);
-                
-                // إنشاء السكريبت التاني (الـ invoke)
-                var invokeScript = document.createElement('script');
-                invokeScript.type = 'text/javascript';
-                
-                if (isMobile) {
-                    invokeScript.src = '//www.highperformanceformat.com/5cd9e7316203b2efabc2739a932c6b4c/invoke.js';
-                } else {
-                    invokeScript.src = '//www.highperformanceformat.com/ed7094f61675be2ef3c3edbad1d8afe9/invoke.js';
-                }
-                
-                banner.appendChild(invokeScript);
-            });
-        </script>
+
     </div>
 
 
